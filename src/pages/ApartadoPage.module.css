@@ -1,0 +1,24 @@
+/* src/pages/ApartadoPage.module.css */
+.ticketContainer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.ticket {
+  background: #FFFFFF;
+  color: #000000;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+}
+.header {
+  background: var(--vino);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: -2rem -2rem 2rem -2rem;
+  font-size: 1.5rem;
+}
+.item { /* ... estilos para cada item ... */ }
+.total { text-align: right; margin-top: 1.5rem; font-weight: bold; }
