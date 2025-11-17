@@ -1,20 +1,52 @@
 /* src/components/Header/Header.module.css */
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--vino);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 1rem 2rem;
+    background-color: var(--vino);
+    /* Altura definida para la barra de navegación */
+    height: 60px; 
 }
-.logo { font-size: 1.5rem; }
-.nav a { color: white; margin-left: 1rem; text-decoration: none; }
-.nav button { background: none; border: none; color: white; cursor: pointer; font-size: 1rem; }
-.logo {
-  height: 40px; /* Define la altura del logo en la barra */
-  display: block;
+
+/* Estilo del contenedor del logo (el Link) */
+.logo { 
+    font-size: 1.5rem;
+    /* Usamos flex para alinear el logo (imagen) y el texto "Bienvenido" */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; /* Espacio entre el logo y el texto */
+    /* Aseguramos que la altura del contenedor se ajuste a la del header, o al menos no la sobrepase */
+    height: 100%; 
 }
-/* Añadimos esto para que la imagen dentro del logo se ajuste */
-.logo img {
-  height: 100%;
-  width: auto;
+
+/* Estilo para la imagen del logo (la que queremos controlar) */
+.logoImg {
+    /* Limitamos la altura de la imagen a 40px */
+    height: 40px; 
+    width: auto; /* Mantiene la proporción del SVG */
+    cursor: pointer;
+}
+
+/* --- Estilos de Navegación --- */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navLink {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1rem;
+}
+
+.navButton {
+    color: white; 
+    background: none;
+    border: none;
+    cursor: pointer; 
+    font-size: 1rem;
+    padding: 0;
 }
