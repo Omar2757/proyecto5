@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// *** IMPORTACIÓN 
+// Corregido: Se usan llaves {} para importar useAuthState
 import { useAuthState } from 'react-firebase-hooks/auth'; 
 import { auth } from '../../config/firebase'; 
 import { signOut } from 'firebase/auth';
-// RUTA DEL LOGO
-import logo from '../../assets/logo-zapateria.svg'; 
+// *** LÍNEA CRÍTICA CORREGIDA: Apunta a .png en lugar del .svg corrupto ***
+import logo from '../../assets/logo-zapateria.png'; 
 
 import styles from './Header.module.css';
 
@@ -27,7 +27,6 @@ function Header() {
                         alt="Logo Zapatería" 
                         className={styles.logoImg} 
                     />
-                    {}
                     Bienvenido 
                 </Link>
             </div>

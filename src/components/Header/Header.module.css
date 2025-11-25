@@ -3,29 +3,24 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centra los elementos verticalmente */
-    padding: 1rem 2rem;
+    align-items: center;
     background-color: var(--vino);
-    /* Altura definida para la barra de navegación */
     height: 60px; 
 }
 
 /* Estilo del contenedor del logo (el Link) */
 .logo { 
     font-size: 1.5rem;
-    /* Usamos flex para alinear el logo (imagen) y el texto "Bienvenido" */
     display: flex; 
     align-items: center; 
-    gap: 10px; /* Espacio entre el logo y el texto */
-    /* Aseguramos que la altura del contenedor se ajuste a la del header, o al menos no la sobrepase */
+    gap: 10px;
     height: 100%; 
 }
 
 /* Estilo para la imagen del logo (la que queremos controlar) */
 .logoImg {
-    /* Limitamos la altura de la imagen a 40px */
     height: 40px; 
-    width: auto; /* Mantiene la proporción del SVG */
+    width: auto; 
     cursor: pointer;
 }
 
